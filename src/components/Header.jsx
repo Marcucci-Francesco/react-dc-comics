@@ -1,6 +1,12 @@
+import img from "../../public/img/favicon.ico";
+
 const Header = () => {
   return (
-    <header>Header</header>
+    <header>
+      <figure>
+        <img src={img} alt="logo" />
+      </figure>
+    </header>
   )
 }
 
