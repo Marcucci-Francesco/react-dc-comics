@@ -89,6 +89,8 @@ h2 {
 
 .icons {
   background-color: rgb(0, 115, 255);
+  position: relative;
+  z-index: 1;
 }
 
 main p {
@@ -169,6 +171,7 @@ button {
 
 .social-icons {
   background-color: rgb(54, 54, 54);
+  position: relative;
   z-index: 1;
 }
 
