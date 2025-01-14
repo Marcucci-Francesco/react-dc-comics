@@ -10,7 +10,7 @@ const Main = () => {
 
       <section className="text">
         <div className="container-text">
-          <h2><i class="fa-solid fa-arrow-right"></i> Content goes here <i class="fa-solid fa-arrow-left"></i></h2>
+          <h2><i className="fa-solid fa-arrow-right"></i> Content goes here <i className="fa-solid fa-arrow-left"></i></h2>
         </div>
       </section>
 

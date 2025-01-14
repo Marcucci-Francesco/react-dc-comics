@@ -6,7 +6,10 @@ import Twitter from '../../public/img/footer-twitter.png'
 import Youtube from '../../public/img/footer-youtube.png'
 
 
-const Footer = () => {
+const Footer = (props) => {
+
+  const listFooter = props.listFooter;
+
   return (
     <footer>
       <section className="list">
@@ -15,21 +18,18 @@ const Footer = () => {
             <div>
               <h3>dc comics</h3>
               <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
+                {listFooter.dcComics.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
 
             <div>
               <h3>shop</h3>
               <ul>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
+                {listFooter.shop.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -37,32 +37,24 @@ const Footer = () => {
           <div className="dc-list">
             <h3>dc</h3>
             <ul>
-              <li>Terms Of Use</li>
-              <li>Privacy policy (New)</li>
-              <li>Ad Choise</li>
-              <li>Advertising</li>
-              <li>Jobs</li>
-              <li>Subscriptions</li>
-              <li>Talent Workshps</li>
-              <li>CPSC Certificates</li>
-              <li>Ratings</li>
-              <li>Shop Help</li>
-              <li>COntact Us</li>
+              {listFooter.dc.map(item => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
 
           <div className="dc-list">
             <h3>sites</h3>
             <ul>
-              <li>DC</li>
-              <li>MAD Magazine</li>
-              <li>DC Kids</li>
-              <li>DC Universe</li>
-              <li>DC Power Visa</li>
+              {listFooter.sites.map(item => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
 
-          <img src={LogoFooter} alt="" />
+          <div>
+            <img id='logo-footer' src={LogoFooter} alt="" />
+          </div>
 
         </div>
       </section>
@@ -72,11 +64,11 @@ const Footer = () => {
           <button>SIGN-UP NOW!</button>
           <div className='d-flex social'>
             <p>FOLLOW US</p>
-            <img src={Facebook} alt="" />
-            <img src={Twitter} alt="" />
-            <img src={Youtube} alt="" />
-            <img src={Pinterest} alt="" />
-            <img src={Periscope} alt="" />
+            <img id='social' src={Facebook} alt="" />
+            <img id='social' src={Twitter} alt="" />
+            <img id='social' src={Youtube} alt="" />
+            <img id='social' src={Pinterest} alt="" />
+            <img id='social' src={Periscope} alt="" />
           </div>
         </div>
 

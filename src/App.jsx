@@ -1,15 +1,16 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { menuHeader, listFooter } from "../data/menu";
 
 
 
 const App = () => {
   return (
     <>
-      <Header />
+      <Header menuHeader={menuHeader} />
       <Main />
-      <Footer />
+      <Footer listFooter={listFooter} />
     </>
   )
 }
