@@ -1,9 +1,9 @@
-import LogoFooter from '../../public/img/dc-logo-bg.png'
-import Facebook from '../../public/img/footer-facebook.png'
-import Periscope from '../../public/img/footer-periscope.png'
-import Pinterest from '../../public/img/footer-pinterest.png'
-import Twitter from '../../public/img/footer-twitter.png'
-import Youtube from '../../public/img/footer-youtube.png'
+import LogoFooter from '/img/dc-logo-bg.png'
+import Facebook from '/img/footer-facebook.png'
+import Periscope from '/img/footer-periscope.png'
+import Pinterest from '/img/footer-pinterest.png'
+import Twitter from '/img/footer-twitter.png'
+import Youtube from '/img/footer-youtube.png'
 
 
 const Footer = (props) => {

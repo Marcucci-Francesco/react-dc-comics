@@ -11,7 +11,7 @@
 /* HEADER */
 
 .container {
-  max-width: 1000px;
+  max-width: 1300px;
   min-height: 80px;
   margin: 0 auto;
 }
@@ -59,100 +59,149 @@ a:hover {
 /* MAIN */
 
 /* section 1 */
-.container-text {
-  max-width: 1000px;
-  margin: 0 auto;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-}
 
 .text {
-  background-color: black;
+  min-height: 400px;
+  background-image: url(/public/img/jumbotron.jpg);
+  background-size: cover;
 }
 
-h2 {
-  color: white;
+.film {
+  background-color: rgb(30, 30, 30);
+
+  .container-text {
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 200px;
+
+    button {
+      text-transform: uppercase;
+      background-color: rgb(0, 115, 255);
+      font-weight: bold;
+      font-size: 1.7rem;
+      position: relative;
+      top: -18px;
+      height: auto;
+    }
+
+    .film-list {
+      margin: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        width: 190px;
+        height: 190px;
+        margin: 10px;
+      }
+
+      span {
+        color: white;
+        display: block;
+        margin: 0 8px;
+        margin-bottom: 40px;
+        max-width: 180px;
+        text-transform: uppercase;
+      }
+    }
+
+    .button-main {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 1.0rem;
+        padding: 10px 50px;
+        margin-top: 30px;
+      }
+    }
+  }
 }
+
+
 
 /* section 2 */
-.container-icons {
-  max-width: 1000px;
-  margin: 0 auto;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  z-index: 1;
-}
 
 .icons {
   background-color: rgb(0, 115, 255);
   position: relative;
   z-index: 1;
+
+  .container-icons {
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+
+    p {
+      text-transform: uppercase;
+      padding-left: 10px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    img {
+      width: 35px;
+      height: auto;
+    }
+
+    div.d-flex {
+      align-items: center;
+    }
+  }
 }
 
-main p {
-  text-transform: uppercase;
-  padding-left: 10px;
-  font-size: 0.8rem;
-  color: white;
-}
-
-main img {
-  width: 35px;
-  height: auto;
-}
-
-main div.d-flex {
-  align-items: center;
-}
 
 /* FOOTERS */
 
 /* section 1 */
-.container-list {
-  max-width: 1000px;
-  margin: 0 auto;
-  max-height: 380px;
-  padding-top: 35px;
-  padding-bottom: 60px;
-}
-
-h3 {
-  text-transform: uppercase;
-  padding: 15px 0;
-  color: white;
-}
 
 .list {
   background-image: url(../public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  .container-list {
+    max-width: 1300px;
+    margin: 0 auto;
+    max-height: 380px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+
+    h3 {
+      text-transform: uppercase;
+      padding: 15px 0;
+      color: white;
+    }
+
+    li {
+      padding: 2px 0;
+      margin: 0;
+      color: rgb(119, 119, 119);
+      font-size: 0.8rem;
+    }
+
+    .dc-list {
+      margin-left: 40px;
+    }
+
+    #logo-footer {
+      height: 450px;
+      position: relative;
+      left: 460px;
+      bottom: 70px;
+    }
+  }
 }
 
-.list .container-list li {
-  padding: 2px 0;
-  margin: 0;
-  color: rgb(119, 119, 119);
-  font-size: 0.8rem;
-}
-
-.dc-list {
-  margin-left: 40px;
-}
-
-#logo-footer {
-  height: 450px;
-  position: relative;
-  left: 160px;
-  bottom: 70px;
-}
 
 /* section 2 */
 .container-social {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
   height: 100px;
   padding: 10px 0;
@@ -173,6 +222,11 @@ button {
   background-color: rgb(54, 54, 54);
   position: relative;
   z-index: 1;
+
+  p {
+    color: rgb(0, 115, 255);
+  }
+
 }
 
 #social {
@@ -184,8 +238,4 @@ button {
 .social {
   min-width: 300px;
   align-items: center;
-}
-
-.social-icons p {
-  color: rgb(0, 115, 255);
 }
