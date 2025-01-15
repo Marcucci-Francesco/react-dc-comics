@@ -77,11 +77,14 @@ a:hover {
     button {
       text-transform: uppercase;
       background-color: rgb(0, 115, 255);
+      border: 1px solid rgb(0, 115, 255);
+      color: white;
       font-weight: bold;
       font-size: 1.7rem;
       position: relative;
       top: -18px;
       height: auto;
+      padding: 10px 10px;
     }
 
     .film-list {
@@ -200,42 +203,41 @@ a:hover {
 
 
 /* section 2 */
-.container-social {
-  max-width: 1300px;
-  margin: 0 auto;
-  height: 100px;
-  padding: 10px 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-button {
-  border: 1px solid rgb(0, 115, 255);
-  color: white;
-  padding: 10px 10px;
-  background-color: rgb(54, 54, 54);
-  height: calc(100px / 3);
-}
 
 .social-icons {
   background-color: rgb(54, 54, 54);
   position: relative;
   z-index: 1;
 
-  p {
-    color: rgb(0, 115, 255);
+  .container-social {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: 1px solid rgb(0, 115, 255);
+      color: white;
+      padding: 10px 10px;
+      background-color: rgb(54, 54, 54);
+      height: calc(100px / 3);
+    }
+
+    .social {
+      min-width: 300px;
+      align-items: center;
+
+      p {
+        color: rgb(0, 115, 255);
+      }
+
+      #social {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+      }
+    }
   }
-
-}
-
-#social {
-  width: 25px;
-  height: 25px;
-  margin: 0 10px;
-}
-
-.social {
-  min-width: 300px;
-  align-items: center;
 }
